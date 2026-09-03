@@ -9,14 +9,7 @@
   --color-sk-orange: #E09B6B;
   --color-sk-cream: #E4E8E3;
 
-  --font-display: "Clash Display", sans-serif;
-  --font-body: "Inter", sans-serif;
+  --font-body: system-ui, sans-serif;
 }
 
-/*
-  Font-Verwendung:
-  - font-display (Clash Display): NUR für große Headlines/Überschriften.
-    Auffällige Display-Schrift, nicht für Fließtext geeignet.
-  - font-body (Inter): für Fließtext, Absätze, kleinere Schrift.
-    Gut lesbar auch in kleiner Größe.
-*/
+/* Eine Schrift für alles – Headlines und Fließtext: font-body */
