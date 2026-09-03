@@ -26,6 +26,7 @@ Nachbau der Real-Estate-Webseite **SK Builders** nach Figma-Vorlage mit HTML und
 
 - Semantisches, barrierefreies HTML (WCAG-konform)
 - Aktuelle Sicherheitsstandards (z. B. keine unsicheren Inline-Scripts, `rel="noopener"` bei externen Links)
+- Responsive Design (Mobile, Tablet, Desktop) über Tailwind-Breakpoints (`sm:`, `md:`, `lg:`)
 
 ## Branch-Struktur
 
