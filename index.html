@@ -8,13 +8,32 @@
 
   <!-- Tailwind CSS via CDN -->
   <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+<!-- Wichtig: Die Play-CDN liest @theme NUR aus einem inline <style type="text/tailwindcss">-Block,
+       eine extern verlinkte style.css wird von ihr NICHT verarbeitet.
+       Deshalb Theme hier zusätzlich inline (Inhalt entspricht 1:1 style.css). -->
+  <style type="text/tailwindcss">
+    @theme {
+      --color-sk-green: #1D4734;
+      --color-sk-beige: #D4C4BA;
+      --color-sk-rose: #CAA9A3;
+      --color-sk-blue: #849FA8;
+      --color-sk-orange: #E09B6B;
+      --color-sk-cream: #E4E8E3;
+      --font-sans: system-ui, sans-serif;
+
+    }
+
+</style>
+
+
   <link rel="stylesheet" href="style.css">
 </head>
 <body class="bg-sk-cream font-sans">
 
   <!-- ===================== HEADER (Michael) ===================== -->
   <header class="bg-sk-green">
-    <div class="max-w-7x1 mx-auto flex items-center justify-between px-6 py-6">
+    <div class="max-w-7xl mx-auto flex items-center justify-between px-6 py-6">
       
   <!--- LOGO ---> 
 
@@ -42,12 +61,60 @@
     </div>
   </header>
   <!-- ===================== HERO SECTION (Michael) ===================== -->
-  <section aria-label="Hero">
-    <!-- TODO: Hero-Bild, Headline, Subline, CTA -->
+
+  <section class="bg-sk-green">
+    <div class="max-w-7xl mx-auto px-6 py-16 md:py-24 grid md:grid-cols-2 gap-12 items-center">
+
+  <!-- linke Spalte: Text -->
+
+ <div>
+        <h1 class="text-5xl md:text-6xl font-extrabold text-white leading-tight">
+          Experience the epitome of home comfort.
+        </h1>
+ 
+        <p class="mt-6 text-sk-cream/80 max-w-md">
+          Our international brand specializes in property appraisal, sales,
+          purchases, and investments. Trust us to deliver exceptional service
+          and help you find your perfect real estate opportunity.
+        </p>
+ 
+        <!-- Badge mit kreisförmigem Text -->
+        <svg viewBox="0 0 160 160" class="mt-10 w-32 h-32" role="img" aria-label="The best property platform">
+          <defs>
+            <path id="badge-circle" d="M 80,80 m -60,0 a 60,60 0 1,1 120,0 a 60,60 0 1,1 -120,0" />
+          </defs>
+ 
+          <!-- Stern in der Mitte -->
+          <text x="80" y="86" text-anchor="middle" font-size="22" fill="white">✦</text>
+ 
+          <!-- Text auf dem Kreisbogen -->
+          <text font-size="11" letter-spacing="1.5" fill="white">
+            <textPath href="#badge-circle" startOffset="0%">
+              THE BEST PROPERTY PLATFORM · THE BEST PROPERTY PLATFORM ·
+            </textPath>
+          </text>
+        </svg>
+      </div>
+
+
+        <!-- Rechte Spalte: Bild -->
+      <div class="relative">
+        <img
+          src="img/garden_with_pergola_and_swimming_pool.jpg"
+          alt="Gemütliche überdachte Terrasse mit Loungemöbeln und Pool"
+          class="w-full h-[420px] object-cover rounded-[3rem]"
+        />
+  <!-- Orange Kreis-Button (Pfeil oben rechts im Bild) -->
+        <a
+          href="#"
+          aria-label="Mehr erfahren"
+          class="absolute -top-4 -right-4 md:top-6 md:right-6 w-16 h-16 rounded-full bg-sk-orange flex items-center justify-center text-2xl text-sk-green"> &#8599;</a> <!-- &#8599 Pfeil nach oben - hier nur als Platzhalter -->
+      </div>
+ 
+    </div>
   </section>
 
-  <main class="flex-1">
-
+  <main>
     <!-- ===================== MAIN – GRÜNE BEREICHE (Michael) ===================== -->
     <section aria-label="Grüne Bereiche">
       <!-- TODO: Inhalte gemäß Figma -->
