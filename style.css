@@ -1,0 +1,15 @@
+@import "tailwindcss";
+
+/* Tailwind v4: Konfiguration läuft über @theme, nicht mehr per JS-Objekt */
+@theme {
+  --color-sk-green: #1D4734;
+  --color-sk-beige: #D4C4BA;
+  --color-sk-rose: #CAA9A3;
+  --color-sk-blue: #849FA8;
+  --color-sk-orange: #E09B6B;
+  --color-sk-cream: #E4E8E3;
+
+  --font-body: system-ui, sans-serif;
+}
+
+/* Eine Schrift für alles – Headlines und Fließtext: font-body */
