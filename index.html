@@ -32,8 +32,8 @@
 <body class="bg-black font-sans m-0">
 
   <!-- ===================== HEADER (Michael) ===================== -->
-<div class="bg-sk-green relative overflow-hidden max-w-[1600px] mx-auto h-[1047.78px]">
-  <div class="absolute inset-y-0 right-0 w-full md:w-2/3 hero-pattern pointer-events-none" aria-hidden="true"></div>
+<div class="bg-sk-green relative overflow-hidden max-w-[1600px] mx-auto min-h-[1047.78px]">
+  <img src="img/Line_pattern.png" alt="" class="absolute top-0 right-0 w-[968.89px] h-[858.89px] pointer-events-none" aria-hidden="true">
 
   <header class="relative z-10">
     <div class="max-w-[1500px] mx-auto flex items-center justify-between px-10 py-8">
@@ -68,60 +68,42 @@
   </header>
   <!-- ===================== HERO SECTION (Michael) ===================== -->
 
-  <section>
-    <div class="relative max-w-7xl mx-auto px-6 py-16 md:py-24 grid md:grid-cols-[1.15fr_1fr] gap-8 items-center">
+ <section>
+  <div class="relative max-w-[1440px] mx-auto pl-6 pr-6 md:pl-[89px] md:pr-[2px] pt-6 md:pt-10 pb-16 md:pb-24">
 
-  <!-- linke Spalte: Text -->
+    <!-- Headline: eigene Zeile, volle Breite -->
+    <h1 class="relative z-10 max-w-[1321px] text-[52px] sm:text-[72px] lg:text-[122.22px] font-bold text-white uppercase leading-[1.1] tracking-[-2.22px]">
+      Experience the epitome of home comfort.
+    </h1>
 
- <div>
-        <h1 class="text-[52px] sm:text-[72px] lg:text-[122.22px] font-bold text-white uppercase leading-[1.1] tracking-[-2.22px]">
-          Experience the epitome of home comfort.
-        </h1>
- 
-        <p class="mt-6 text-sk-cream/80 max-w-md">
+    <!-- Absatz + Bild: 2-spaltiger Bereich darunter -->
+    <div class="mt-0 grid md:grid-cols-[1fr_1.8fr] gap-8 items-center">
+
+      <div>
+       <p class="text-[20px] leading-[1.5] text-white/60 max-w-[426px]">
           Our international brand specializes in property appraisal, sales,
           purchases, and investments. Trust us to deliver exceptional service
           and help you find your perfect real estate opportunity.
         </p>
- 
-        <!-- Badge mit kreisförmigem Text -->
-        <svg viewBox="0 0 160 160" class="mt-10 w-32 h-32" role="img" aria-label="The best property platform">
-          <defs>
-            <path id="badge-circle" d="M 80,80 m -60,0 a 60,60 0 1,1 120,0 a 60,60 0 1,1 -120,0" />
-          </defs>
- 
-          <!-- Stern in der Mitte -->
-          <text x="80" y="86" text-anchor="middle" font-size="22" fill="white">✦</text>
- 
-          <!-- Text auf dem Kreisbogen -->
-          <text font-size="11" letter-spacing="1.5" fill="white">
-            <textPath href="#badge-circle" startOffset="0%">
-              THE BEST PROPERTY PLATFORM · THE BEST PROPERTY PLATFORM ·
-            </textPath>
-          </text>
-        </svg>
+
+      <img src="img/Group.png" alt="The best property platform" class="mt-10 w-46 h-46"> 
       </div>
 
+       <div class="relative -mt-20">
+        <div class="absolute inset-x-3 top-19 bottom-4 -translate-x-1 translate-y-4 rotate-[5deg] rounded-full bg-emerald-950" aria-hidden="true"></div>
+        <img
+          src="img/garden_with_pergola_and_swimming_pool.jpg"
+          alt="Gemütliche überdachte Terrasse mit Loungemöbeln und Pool"
+          class="relative w-full aspect-[9/5] object-cover rounded-full rotate-5 ring-2 ring-white/70 brightness-90
+                 [mask-image:linear-gradient(to_right,transparent,black_15%,black_85%,transparent)]">
 
-        <!-- Rechte Spalte: Bild -->
-      <div class="relative">
-  <!-- Hintergrund-Form: flacher, gleiche Breite -->
-  <div class="absolute inset-x-3 top-19 bottom-4 -translate-x-1 translate-y-4 rotate-[5deg] rounded-full bg-emerald-950" aria-hidden="true"></div>
-  <img
-    src="img/garden_with_pergola_and_swimming_pool.jpg"
-    alt="Gemütliche überdachte Terrasse mit Loungemöbeln und Pool"
-    class="relative w-full aspect-[9/5] object-cover rounded-full rotate-5 ring-2 ring-white/70 brightness-90
-           [mask-image:linear-gradient(to_right,transparent,black_15%,black_85%,transparent)]">
-
-  <!-- Orange Kreis-Button (Pfeil oben rechts im Bild) -->
-        <a
-          href="#"
-          aria-label="Mehr erfahren"
-                    class="absolute top-0 -right-8 md:top-4 md:right-12 w-12 h-12 rounded-full bg-sk-orange flex items-center justify-center text-3xl font-bold text-sk-green z-10"> &#8599;</a> <!-- &#8599 Pfeil nach oben - hier nur als Platzhalter -->
-      </div>
- 
+           <a href="#" aria-label="Mehr erfahren"
+           class="absolute -top-15 -right-15 md:-top-18 md:-right-18 w-[300px] h-[300px] z-10">
+          <img src="img/Group_24.png" alt="" class="w-full h-full">
+        </a>
     </div>
-  </section>
+  </div>
+</section>
 
 </div>
   <main>
