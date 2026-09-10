@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css" />
   <title>Experience the Epitome | SK Builders</title>
   <meta name="description" content="Nachbau der SK Builders Real Estate Webseite">
 
@@ -22,6 +23,49 @@
       --color-sk-cream: #E4E8E3;
       --font-sans: system-ui, sans-serif;
 
+      /* Variablen schwarzer Teil */
+      /* Colors */
+        --color-primary: #1d4734; /* Grün, Section-BGs, Nav-Pill "Get started" */
+        --color-accent: #e09b6b; /* Orange, CTA-Buttons, Icon-Kreise */
+        --color-ink: #050505; /* Nav-Text/Icons */
+        --color-muted: #a0a0a0; /* Beschreibungstexte, Stat-Labels */
+        --color-pill-bg: #e6e8ee; /* Helle Nav-Pillen, Logo */
+        --color-shadow-box: #0d0d0d;
+        --color-sk-white: #ffffff;
+        --color-sk-black: #000000;
+
+        /* Fonts */
+        --font-satoshi: "Satoshi", sans-serif; /* Headlines, Section-Labels */
+        --font-inter: "Inter", sans-serif;
+        --font-encode: "Encode Sans", sans-serif; /* nur Logo */
+        --font-jakarta: "Plus Jakarta Sans", sans-serif; /* Nav, Fließtext */
+
+        /* Typography */
+        --text-caption: clamp(0.875rem, 0.8rem + 0.3vw, 1.1rem);
+        --text-caption--line-height: 1.2;
+
+        --text-body: clamp(1rem, 0.85rem + 0.2vw, 1.25rem);
+        --text-body--line-height: 1.5;
+
+        --text-label: clamp(1.25rem, 1.1rem + 1.75vw, 2.75rem);
+        --text-label--line-height: 1.2;
+
+        --text-heading: clamp(2rem, 1.5rem + 2.5vw, 4.5rem);
+        --text-heading--line-height: 1.2;
+
+        --text-display: clamp(2.5rem, 1.5rem + 6.125vw, 8rem);
+        --text-display--line-height: 1;
+
+        --text-overlay: clamp(1.75rem, 1rem + 5.5vw, 7rem);
+        --text-overlay--line-height: 1.2;
+
+        /* Sonstige*/
+        --spacing: 4px;
+
+        --radius-img: 297.22px;
+        --radius-gradient: 216.56px;
+
+        --max-width-page: 1600px;
     }
 
 </style>
@@ -108,8 +152,100 @@
 </div>
   <main>
   <!-- ===================== SCHWARZ 1 (Nicole) – About Us + Dream House ===================== -->
-  <section id="about-dreamhouse" aria-label="About Us und Dream House">
-    <!-- TODO: Nicole füllt hier -->
+  <section id="about-dreamhouse" aria-label="About Us und Dream House" class="bg-sk-black font-jakarta font-medium">
+    <div class="max-w-page mx-auto flex px-25 py-25">
+          <div class="flex w-[45%] flex-col gap-65">
+            <div class="flex items-center gap-5">
+              <img src="img/img_schwarzer Teil/logo_kreise.svg" alt="" />
+              <p class="font-satoshi text-label text-sk-white">About Us</p>
+            </div>
+            <div class="flex max-w-[30ch] flex-col gap-3">
+              <p class="text-body text-muted">
+                We take great pride in ensuring the satisfaction of our
+                customers. That's why we proudly guarantee the quality and
+                reliability of our products.
+              </p>
+              <a
+                href="#"
+                class="bg-accent text-caption text-ink w-fit rounded-full px-10 py-4 font-bold"
+                >Get Started</a
+              >
+            </div>
+          </div>
+
+          <div class="flex flex-1 flex-col gap-10">
+            <div class="flex flex-col gap-4">
+              <h2
+                class="font-satoshi text-sk-white text-heading w-[110%] bg-linear-to-r from-white from-40% to-white/30 bg-clip-text font-bold text-transparent uppercase"
+              >
+                We've found luxury homes for clients for decade.
+              </h2>
+              <p class="text-muted text-body max-w-[88%]">
+                We take great pride in ensuring the satisfaction of our
+                customers, which is why we guarantee that the products we sell
+                will bring happiness to each and every customer. Our genuine
+                care for customer satisfaction is what sets us apart.
+              </p>
+            </div>
+
+            <ul class="flex w-full max-w-[83%] list-none justify-between">
+              <li class="flex flex-col gap-2">
+                <strong class="text-heading text-sk-white font-inter font-bold"
+                  >10 <span class="text-accent">+</span></strong
+                >
+                <span class="font-inter text-muted text-body"
+                  >Awards Gained</span
+                >
+              </li>
+              <li class="flex flex-col gap-2">
+                <strong class="text-heading text-sk-white font-inter font-bold"
+                  >20 <span class="text-accent">+</span></strong
+                >
+                <span class="font-inter text-muted text-body"
+                  >Years of Experience</span
+                >
+              </li>
+              <li class="flex flex-col gap-2">
+                <strong class="text-heading text-sk-white font-inter font-bold"
+                  >598 <span class="text-accent">+</span></strong
+                >
+                <span class="font-inter text-muted text-body"
+                  >Rented Home Stay</span
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- DREAM HOUSE -->
+        <div class="max-w-page mx-auto px-25 pt-10 pb-40">
+          <div class="relative">
+            <div
+              class="rounded-gradient absolute top-[33%] left-10 z-10 h-[80%] w-[95%] bg-[linear-gradient(to_bottom,rgba(18,18,18,0)_0%,rgba(18,18,18,0.1)_40%,rgba(36,36,36,0.4)_45%,rgba(64,64,64,0.5)_55%,rgba(64,64,64,0.8)_82%,rgba(18,18,18,1)_100%)]"
+            ></div>
+
+            <div class="rounded-img relative overflow-hidden">
+              <img
+                src="img/img_schwarzer Teil/a-backyard-with-a-wooden-deck-and-a-large-couch.jpg"
+                alt="a backyard with a wooden deck and a large couch"
+                class="aspect-21/9 w-full object-cover"
+              />
+              <button
+                type="button"
+                aria-label="Video abspielen"
+                class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2"
+              >
+                <img src="img/img_schwarzer Teil/icon-play.svg" alt="" />
+              </button>
+            </div>
+
+            <h3
+              class="font-satoshi text-overlay text-sk-white absolute bottom-[-12%] left-1/2 z-20 -translate-x-1/2 font-normal whitespace-nowrap uppercase"
+            >
+              Dream House
+            </h3>
+          </div>
+        </div>
   </section>
 
   <!-- ===================== GRÜN (Michael) – The Project + Our Quality ===================== -->
@@ -178,10 +314,47 @@
 
       </div>
     </div>
+  </section>
 
   <!-- ===================== SCHWARZ 2 (Nicole) ===================== -->
-  <section id="black-2" aria-label="Weiterer schwarzer Bereich">
-    <!-- TODO: Nicole füllt hier -->
+  <section id="black-2" aria-label="Weiterer schwarzer Bereich" class="bg-sk-black font-jakarta font-medium">
+    <div class="max-w-page mx-auto px-25 py-25">
+        <div class="relative">
+          <!-- H2 -->
+          <h2
+            class="text-display font-satoshi text-sk-white relative z-20 text-center uppercase"
+          >
+            Let's combine our
+            <span
+              class="bg-linear-to-b from-[#D0D0D0] to-[#9A9A9A] bg-clip-text text-transparent"
+            >
+              strengths
+            </span>
+          </h2>
+
+          <!-- Bildbereich -->
+          <div class="relative mx-auto -mt-8 w-[38%] rotate-5">
+            <!-- Schatten -->
+            <div
+              class="absolute top-[35%] left-2 z-20 h-[66%] w-[95%] rounded-[133px] bg-linear-to-b from-[#000000]/2 to-[#2F2F2F]"
+            ></div>
+
+            <!-- Bild -->
+            <div class="relative z-10 overflow-hidden rounded-[183px]">
+              <img
+                src="img/img_schwarzer Teil/exteriors-view-of-a-modern-villa-in-the-foreground.jpg"
+                alt="exteriors view of a modern villa in the foreground"
+                class="aspect-16/9 w-full object-cover"
+              />
+            </div>
+
+            <!-- Pfeil -->
+            <a href="#" class="absolute top-13 -right-40 z-40">
+              <img src="img/img_schwarzer Teil/pfeil-im-kreis-green.svg" alt="" />
+            </a>
+          </div>
+        </div>
+      </div>
   </section>
 </main>
 
